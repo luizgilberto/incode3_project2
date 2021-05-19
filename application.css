@@ -1,0 +1,376 @@
+/*GLOBAL PROPRIETIES*/
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif; /*Similar font to Avenir Next.*/
+}
+
+.flex {
+  display:flex;
+}
+
+.flex.space-between {
+  justify-content: space-between;
+}
+
+.flex.wrap {
+  flex-wrap: wrap;
+} 
+
+.flex.space-evenly {
+  justify-content: space-evenly;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+a:hover { /* Any <a> tag will have the text with shadow when mouve hover */
+  text-shadow: 2px 2px 8px #000000;
+}
+
+
+/* LAYOUT */
+
+body { 
+  background-color:#f5f5f5;
+}
+
+main {
+  margin:0px 5%;
+}    
+
+section {
+  margin-bottom: 50px;
+}
+
+
+/* HEADER LAYOUT */
+
+header img {
+  height: 40px;
+}
+
+/* NAV LAYOUT */
+
+nav {
+  background-color: #6a7b8b;
+  padding: 10px 30px;
+}
+
+nav > div > a {
+  margin-right: 40px;
+}
+
+nav a {
+  text-decoration: none;
+  font-family: 'Archivo', sans-serif;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.navtext {
+  align-self: center;
+}
+
+@media screen and (max-width: 650px) {
+  nav.flex {
+    flex-direction: column;
+  }
+  nav a {
+    display: block;
+    text-align: center;
+    padding: 5px;
+  }
+}
+ 
+
+/* HOMEPAGE (MAIN) LAYOUT */
+
+section.main-logo {
+  margin: 0 5% 0px;
+  text-align:center;
+}
+
+.main-logo img {
+  max-width: 90%;
+  height:200px;
+}
+
+/* NEW WAY TO GET IMAGE WITH TEXT INSIDE: */
+#imgtxt {
+  color: white;
+  background-image: url("./assets/mr_coffee_salle.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 87%;
+  height: 800px;
+  text-align:center;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 8px #000000;
+}
+
+#imgtxt h1 {
+  color: white;
+  padding: 5%;
+  font-size: 40px;
+  margin-top: 3%;
+  font-family: 'Archivo', sans-serif;
+}
+
+@media screen and (max-width: 750px) {
+  #imgtxt h1 {
+    font-size: 20pt;
+  }
+  #imgtxt {
+    height: 400px;
+  }
+}
+
+/* OLD WAY TO GET THE IMAGE WITH TEXT. IT WORKED BETTER IN HIGH RES BUT TEXT GET OUT OF THE IMAGE IN SOME MOBILES.
+
+.imgtxt img {
+  text-align:center;
+  position: relative;
+  width: 99%;
+}
+
+.imgtxt h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  text-align:center;
+  color: white;
+  font-weight: 700;
+  font-size: 35px;
+  font-family: 'Archivo', sans-serif;
+  text-shadow: 2px 2px 8px #000000;
+}
+
+@media screen and (max-width: 650px) {
+  .imgtxt h1 {
+    position: absolute;
+    top: 55%;
+    font-weight: 700;
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .imgtxt h1 {
+    position: absolute;
+    top: 70%;
+    font-weight: 700;
+    font-size: 20px;
+  }
+}
+
+*/
+
+
+.h2text {
+  text-align:center;
+  font-weight: 700;
+  font-size: 35px;
+  color:#5c5b5b;
+  text-shadow: 0px 2px 1px;
+} 
+
+/* CARDS LAYOUT */
+
+.card {
+  align-items: center;
+  padding: 15px;
+  background-color:#bbc2c9;
+  text-align:center;
+  color: white;
+  margin:20px;
+  width: 30%;
+  flex-direction:column;
+  box-shadow: black 1px 1px 5px -2px;
+}
+
+.card img {
+  width: 100px;
+  margin: 10px auto;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 22px;
+  margin:10px;
+  text-shadow: 0px 1px 2px black;
+}
+
+@media screen and (max-width: 750px) {
+  .card {
+    width: 90%;
+    margin: 15px auto;
+  }
+  
+  .cards > .flex {
+    display: block;
+  }
+}
+
+/* BUTTON LAYOUT */
+.buttonbox {
+  text-align:center;
+} 
+
+.button {
+  background-color:#6a7b8b;
+  color: white;
+  font-weight: 700;
+  font-size: 21px;
+  border-radius: 5px; /*make it egdes curved */
+  padding: 15px;
+  margin-bottom: 30px;
+  width: 230px;
+  box-shadow: 1px 2px 5px -2px black;
+}
+
+/* FINAL PART HOME LAYOUT */
+.nearend p {
+  text-align:center;
+  color:#5c5b5b
+}
+
+.opensign img{
+  height: 105px;
+}
+
+.opensign {
+  display: flex;
+  font-size: 26px;
+  font-weight: 700;
+  color:#5C5B5B;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.opensign p {
+  text-align:left;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.cards-end {
+  padding: 10px;
+  margin:20px;
+  width: 30%;
+  flex-direction:column;
+}
+
+h2 {
+  text-align:center;
+  font-weight: 700;
+  color:#5c5b5b;
+  font-size: 20px; 
+} 
+
+/* FOOTER LAYOUT */
+
+footer {
+  background-color: #6a7b8b;
+  padding: 20px 20px 20px 20px;
+  color: white;
+  position: relative;
+}
+
+footer img {
+  height: 80px;
+}
+
+.footertext img {
+  height: 28px;
+  margin:15px;
+}
+
+.footertext {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align:center;
+  align-self: center;
+  padding-top: 30px;
+}
+
+@media screen and (max-width: 500px) {
+ 
+  footer div img { 
+    padding-top: 5px;
+    margin: 0px;
+  }
+  
+  .footertext img {
+    height: 28px;
+    margin:10px;
+  }
+}
+
+/* CONTACT PAGE */
+
+#contact-header {
+  text-align:center;
+  font-weight: 700;
+  color:#5b5b5a;
+  font-size: 25px; 
+}
+
+#contact-adr {
+  padding-left: 20%;
+  padding-right: 20%;
+  margin-top: 40px;
+}
+
+#google-map {
+  max-width: 100%;
+  margin-top: 7%;
+  margin-bottom: 7%;
+  padding: 10px 0px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;  
+}
+
+
+/* ABOUT PAGE */
+
+.about-h2 {
+  text-align: unset; /* Takes off the h2 align */
+  font-size: 28px;
+  max-width: 390px;
+  margin-bottom: 30px;
+}
+
+.about-ntext {
+  max-width: 456px;
+  font-size: 17px;
+  margin: 20px 0px; 
+}
+
+.about-1st-img {
+  max-height: 510px;
+  max-width: 340px;
+  width: 40%;
+  margin-left: 20px;
+  margin-bottom: 50px;
+  object-fit: fill;
+}
+
+.about-2nd-img {
+  max-height: 510px;
+  max-width: 340px;width: 40%;
+  margin-right: 20px;
+  margin-bottom: 50px;
+  object-fit: fill;
+}
