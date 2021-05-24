@@ -27,6 +27,14 @@
   flex-direction: row-reverse;
 }
 
+.flex.vert {
+  flex-direction: column;
+}
+
+.relative-pos {
+  position: relative;
+}
+
 a:hover { /* Any <a> tag will have the text with shadow when mouve hover */
   text-shadow: 2px 2px 8px #000000;
 }
@@ -323,13 +331,15 @@ footer img {
   text-align:center;
   font-weight: 700;
   color:#5b5b5a;
-  font-size: 25px; 
+  font-size: 20px;
+  padding-bottom: 8px;
 }
 
 #contact-adr {
-  padding-left: 20%;
+  padding-left: 24%;
   padding-right: 20%;
   margin-top: 40px;
+  font-size: 18px; 
 }
 
 #google-map {
@@ -340,6 +350,125 @@ footer img {
   display: block;
   margin-left: auto;
   margin-right: auto;  
+}
+
+.required { 
+  color: #6a7b8b;
+}
+
+form div input, form textarea {
+  background-color: #c8ccd4;
+  width: 100%;
+  margin: 10px 0;
+  padding: 5px;
+  border: none;
+  height: 50px;
+  resize: none;
+}
+
+form textarea {
+  height: 100px;
+}
+
+form label {
+  color: #5c5b5b;
+  font-size: 20px;
+}
+
+form div {
+  margin: 15px 0px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;  
+}
+
+form input {
+  background-color: #c8ccd480;
+}
+
+form div:last-child {
+  margin-top: 32px;
+}
+
+::placeholder {
+  color: white;
+  font-weight: 700;
+  padding: 10px
+}
+
+#popUpBox {
+  margin: 0 auto;
+  padding: 35px;
+  width: 85%;
+  max-width: 900px;
+  font-weight: bold;
+  background-color: #ffffff;
+  border: 1px solid #979797;
+  top: 20%;
+  bottom: 25%;
+}
+
+.dark-logo {
+  display: block;
+  margin: 10px;
+  width: 70px;
+}
+
+#popUpBox div:last-child {
+  text-align: center;
+}
+
+#submitButton {
+  border: none;
+}
+
+#popUpBox h2 {
+  margin: 10px;
+}
+
+#popup-text {
+  margin: 50px 100px;
+  text-align: left;
+}
+
+#sent {
+  align-items: center;
+  position:absolute;
+  top: 5%;
+  right: 0;
+  left: 0;
+}
+
+#closeModal {
+  margin: 20px 0px;
+  border: none;
+}
+
+@media screen and (max-width: 768px) {
+
+  #popUpBox {
+  width: 90%;
+  height: fit-content;
+
+  }
+
+  #popUpBox .flex {
+  display: block;
+  }
+
+  #sent {
+  position: relative;
+  }
+
+  .dark-logo {
+  margin: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+  #popup-text {
+  margin: 25px 60px;
+  }
 }
 
 

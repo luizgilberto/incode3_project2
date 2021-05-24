@@ -1,5 +1,5 @@
-# INCODE - Project 1 
+# INCODE - Project 2 
 ## Mr. Coffee
 
-This is the first project of the third INCODE bootcamp.
+This is the second project of the third INCODE bootcamp.
 Was a excelent execise of how make a HTML and CSS website just coding directly.
